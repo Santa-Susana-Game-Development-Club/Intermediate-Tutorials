@@ -6,7 +6,7 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-		Day day;
+		Day day; //Enums are declared like any object
 		
 		Scanner in = new Scanner(System.in);
 		
@@ -14,7 +14,7 @@ public class Main {
 		String dow = in.nextLine();
 		
 		if(dow.equalsIgnoreCase("Sunday")) {
-			day = Day.SUNDAY;
+			day = Day.SUNDAY; //This how you give an enum a value
 		} else if(dow.equalsIgnoreCase("Monday")) {
 			day = Day.MONDAY;
 		} else if(dow.equalsIgnoreCase("Tuesday")) {
@@ -32,7 +32,7 @@ public class Main {
 			day = null;
 		}
 		
-		System.out.println(day + ": " + day.getOpinion());
+		System.out.println(day + ": " + day.getOpinion()); //Getting the constant from the getter is like calling any method in a class 
 		
 		in.close();
 	}
