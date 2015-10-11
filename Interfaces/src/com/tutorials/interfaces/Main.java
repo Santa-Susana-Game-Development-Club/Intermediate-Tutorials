@@ -13,7 +13,7 @@ public class Main {
 			System.out.println("What food would you like to learn about?");
 			String s = in.nextLine();
 			if(s.equalsIgnoreCase("apple")) {
-				e = new Apple();
+				e = new Apple(); //Polymorphism applies to interfaces
 			} else if(s.equalsIgnoreCase("banana")) {
 				e = new Banana();
 			} else {
