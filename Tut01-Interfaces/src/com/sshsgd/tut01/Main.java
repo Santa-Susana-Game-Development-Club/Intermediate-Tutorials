@@ -20,10 +20,16 @@ public class Main {
 		
 		fi3.setEdible(e -> { //This is a lambda expression, which is basically creating an anonymous class much easier
 			//Note that here is the code for the howToEat(Edible e) method, Java identifies that by the arguments, here we have "e" and since howToEat is the only method that only has one parameter, Java knows to override that method
-			System.out.println("Use a fork! " + e.getClass().getName()); //Similar to anonymous classes, lambda expressions do not have names, but are identified by the $, so in this case, this is Main$$Lambda$1/23193664 
+			System.out.println("Use a fork! " + e.getClass().getName()); //Similar to anonymous classes, lambda expressions do not have names, but are identified by the $, so in this case, this is Main$$Lambda$1/some# 
 		});
 		fi3.howToEat();
-		
+		/**
+		 * EXPECTED OUTPUT:
+		 * 
+		 * Use chopsticks! Sushi
+		 * Use a spoon! com.sshsgd.tut01.Main$1
+		 * Use a fork! com.sshsgd.tut01.Main$$Lambda$1/some#
+		 */
 	}
 
 }
