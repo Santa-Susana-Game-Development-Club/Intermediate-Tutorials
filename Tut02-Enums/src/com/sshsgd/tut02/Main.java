@@ -11,6 +11,16 @@ public class Main {
 		
 		hap2 = new HowAppPlays(Platforms.ANDROID);
 		hap2.printHowAppRuns();
+		
+		/**
+		 * EXPECTED OUTPUT:
+		 * 
+		 * PC
+		 * Running whatever framework the dev chose
+		 * ANDROID
+		 * Running the Android SDK
+		 * 
+		 */
 	}
 
 }
