@@ -3,28 +3,28 @@ package com.sshsgd.tut09;
 public class Main {
 
 	public static void main(String[] args) {
-		
+
 		System.out.println("COMPARING STRINGS\n");
-		
+
 		String name1 = "Jose";
 		String name2 = "Jose";
 		String name3 = new String("Jose");
-		
+
 		//using the == operator is bad because you can get unexpected results
-		
+
 		System.out.println(name1 == name2); //True because both name1 and name2 point to the same string in memory
 		System.out.println(name1 == name3); //False because calling "new" created a new string in memory
-		
+
 		String userName = "GameDevClub";
 		String inputtedName = "gamedevclub";
-		
+
 		//When comparing strings, use the .equals() method
-		
+
 		System.out.println(inputtedName.equals(userName)); //False because the .equals() is case sensitive
 		System.out.println(inputtedName.equalsIgnoreCase(userName)); //True because .equalsIgnoreCase() is not case sensitive
 
 		System.out.println("\nCHAR TYPE\n");
-		
+
 		//Strings are arrays of the char type
 		char a = 'a'; //chars have single quotes and only hold one character
 		int aInt = (int) a; //Characters are represented by a number, and casting an int can give us that number
@@ -48,7 +48,7 @@ public class Main {
 		String s6 = " Hello world ";
 		System.out.println(s6);
 		System.out.println(s6.trim()); //Removes trailing and leading spaces, but keeps spaces within the strings
-		
+
 		System.out.println("\nINDEX OF\n");
 		String s3 = "Hello, I am Jose";
 		System.out.println(s3.indexOf(',')); //Returns the first index of the char reading left to right
@@ -63,13 +63,67 @@ public class Main {
 		String s4 = "Strings are cool";
 		System.out.println(s4.replace(' ', '_')); //Replaces all the occurrences of first char with the second
 		System.out.println(s4.replace("cool", "uncool")); //Replaces all occurrences of the first string with the second
-		
+
 		System.out.println("\nCHAR AT\n");
 		String s5 = "Ayy lmao";
 		System.out.println(s5.charAt(2)); //charAt() returns the char at the given index
 		System.out.println(s5.charAt(s5.length() - 1)); //Returns the last character of the string
 		System.out.println(s5.charAt(0)); //Returns the first character of the string
-		
+
+		/**
+		 *
+		 * EXPECTED OUTPUT
+		 *
+		 * COMPARING STRINGS
+		 *
+		 * true
+		 * false
+		 * false
+		 * true
+		 *
+		 * CHAR TYPE
+		 *
+		 * a
+		 * 97
+		 * a
+		 *
+		 * STRING LENGTHS
+		 *
+		 * 6
+		 *
+		 * SUB STRINGS
+		 *
+		 * a cool guy
+		 * cool
+		 *
+		 * TRIM
+		 *
+ 	     * Hello world
+	     * Hello world
+	     * 
+	     * INDEX OF
+	     *
+	     * 5
+  	     * 6
+	     * 11
+	     * -1
+	     * 12
+	     * Hello,
+	     * Jose
+	     *
+	     * REPLACE
+	     *
+	     * Strings_are_cool
+	     * Strings are uncool
+	     *
+	     * CHAR AT
+	     *
+	     * y
+	     * o
+	     * A
+		 *
+		 */
+
 	}
 
 	private static String firstWord(String s) {
@@ -83,7 +137,7 @@ public class Main {
 		}
 		return firstWord;
 	}
-	
+
 	private static String lastWord(String s) {
 		String trimmed = s.trim();
 		int index = trimmed.lastIndexOf(' ');
@@ -95,5 +149,5 @@ public class Main {
 		}
 		return firstWord;
 	}
-	
+
 }
