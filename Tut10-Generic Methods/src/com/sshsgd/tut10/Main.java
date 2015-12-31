@@ -25,6 +25,18 @@ public class Main {
 		System.out.println(listContains("ipsum", stringList, true));
 		System.out.println(listContains("ipsum", stringList, false));
 		
+		/**
+		 * 
+		 * EXPECTED OUTPUT
+		 * 
+		 * java.lang.Object
+		 * true
+		 * false
+		 * true
+		 * false
+		 * 
+		 */
+		
 	}
 
 	static <T> String getTypeName(T t) { //Generic declaration goes between modifiers and return type

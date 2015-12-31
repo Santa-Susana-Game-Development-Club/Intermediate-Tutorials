@@ -7,6 +7,17 @@ public class Main {
 		System.out.println(factorial(5));
 		System.out.println(factorial(8));
 		System.out.println(factorial(1));
+		
+		/**
+		 * 
+		 * EXPECTED OUTPUT
+		 * 
+		 * 120
+		 * 40320
+		 * 1
+		 *  
+		 */
+		
 	}
 	
 	@SuppressWarnings("unused")
