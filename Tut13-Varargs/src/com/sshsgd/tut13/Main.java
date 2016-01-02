@@ -30,6 +30,21 @@ public class Main {
 			System.out.println(i);
 		}
 		
+		/**
+		 * 
+		 * EXPECTED OUTPUT
+		 * 
+		 * com.sshsgd.tut13.NotEnoughArgumentsExcpetion
+		 * 	at com.sshsgd.tut13.Main.addAllToArrayList(Main.java:38)
+		 * 	at com.sshsgd.tut13.Main.main(Main.java:20)
+		 * 20
+		 * 4
+		 * 6
+		 * 2
+		 * 5
+		 * 
+		 */
+		
 	}
 
 	@SafeVarargs
