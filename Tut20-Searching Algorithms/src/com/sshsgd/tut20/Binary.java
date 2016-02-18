@@ -3,16 +3,16 @@ package com.sshsgd.tut20;
 public class Binary {
 
 	public static void main(String[] args) {
-		int[] array = {
+		int[] array = { //The array must already be sorted in ascending order
 			13, 24, 34, 46, 52, 63, 77, 89, 91, 100
 		};
-		System.out.println(binarySearch(array, 63));
+		System.out.println(binarySearch(array, 77));
 		System.out.println(binarySearch(array, 42));
 		System.out.println(binarySearch(array, 13));
 	}
 
 	public static int binarySearch(int array[], int find) {
-		return binarySearch(array, find, 0, array.length - 1);
+		return binarySearch(array, find, 0, array.length - 1); //Overload to have less parameters 
 	}
 	
 	public static int binarySearch(int array[], int find, int low, int high) {
@@ -36,5 +36,15 @@ public class Binary {
 		
 		return -1; //Return -1 if the number was not found
 	}
+	
+	/**
+	 * 
+	 * EXPECTED OUTPUT:
+	 * 
+	 * 6
+	 * -1
+	 * 0
+	 * 
+	 */
 	
 }
