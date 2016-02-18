@@ -12,14 +12,24 @@ public class Linear {
 	}
 	
 	public static int linearSearch(int[] array, int find) {
-		int result = -1;
-		for(int i = 0; i < array.length; i++) {
-			if(array[i] == find) {
-				result = i;
-				break;
+		int result = -1; //Default return, will still be -1 if the number is not found
+		for(int i = 0; i < array.length; i++) { //Loop through the array
+			if(array[i] == find) { //If the value at the index is equal to find
+				result = i; //Set the result to the index of the first iteration of find
+				break; //Break out of the loop so that we don't do anymore unnecessary checks
 			}
 		}
 		return result;
 	}
+	
+	/**
+	 * 
+	 * EXPECTED OUTPUT:
+	 * 
+	 * 5
+	 * -1
+	 * 2
+	 * 
+	 */
 	
 }
