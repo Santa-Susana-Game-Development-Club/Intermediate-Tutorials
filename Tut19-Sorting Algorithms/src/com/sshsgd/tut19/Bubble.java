@@ -25,7 +25,7 @@ public class Bubble {
 				int index2 = i + 1; //Next number index
 				int temp1 = array[index1]; //Current number
 				int temp2 = array[index2]; //Next Number
-				if(temp2 < temp1) { //If the next number is greater than the current number
+				if(temp2 < temp1) { //If the next number is less than than the current number
 					array[index1] = temp2; //Set the current Number the the next number
 					array[index2] = temp1; //Set the next number to the current nuber
 				}
