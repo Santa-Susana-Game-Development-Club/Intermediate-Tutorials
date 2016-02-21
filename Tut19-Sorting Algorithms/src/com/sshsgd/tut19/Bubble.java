@@ -19,15 +19,15 @@ public class Bubble {
 	}
 	
 	public static void bubbleSort(int[] array) {
-		for(int j = 0; j < array.length - 1; j++) { //Go through the array 1 time less than the length
-			for(int i = 0; i < array.length - 1; i++) { //Loop through the array, stop at the second to last index
+		for(int j = array.length - 1; j > 0; j--) { //J will represent how far the nested loop will go
+			for(int i = 0; i < j; i++) { //Loop through the array, stop at j
 				int index1 = i; //Current number index
 				int index2 = i + 1; //Next number index
 				int temp1 = array[index1]; //Current number
 				int temp2 = array[index2]; //Next Number
 				if(temp2 < temp1) { //If the next number is less than than the current number
 					array[index1] = temp2; //Set the current Number the the next number
-					array[index2] = temp1; //Set the next number to the current nuber
+					array[index2] = temp1; //Set the next number to the current number
 				}
 			}
 		}
